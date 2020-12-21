@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "480505229487",
+    "project_id": "iospsuh",
+    "storage_bucket": "iospsuh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480505229487:android:45bfdfab3fad2281cfe45a",
+        "android_client_info": {
+          "package_name": "com.ultimate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480505229487-oakscrs2cdvt59rtghsmtvtvcvm0uss6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRnRbJVR8wMbrSqwI5pm1RA7v4bO-Gkm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480505229487-oakscrs2cdvt59rtghsmtvtvcvm0uss6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
