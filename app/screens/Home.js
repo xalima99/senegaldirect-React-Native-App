@@ -20,7 +20,7 @@ const Home = () => {
 
   setTimeout(() => {
     setloading(false);
-  }, 15000);
+  }, 5000);
 
   return (
     <>
@@ -42,10 +42,10 @@ const Home = () => {
               fontSize: 25,
               fontWeight: 'bold',
               alignSelf: 'center',
-              top:'70%',
+              top: '70%',
               position: 'absolute',
             }}>
-            <ActivityIndicator color='red' />
+            <ActivityIndicator color="red" />
           </Text>
 
           <LottieView
@@ -56,7 +56,7 @@ const Home = () => {
         </Modal>
       )}
       <View style={styles.container}>
-        <CoverList data={postsAlaUne} home/>
+        <CoverList data={postsAlaUne} home />
       </View>
     </>
   );

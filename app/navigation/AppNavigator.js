@@ -15,8 +15,6 @@ import colors from '../config/colors';
 import Category from '../screens/Category';
 import Favorite from '../screens/Favorite';
 
-
-
 const HomeStack = createStackNavigator();
 const PostStack = createStackNavigator();
 const FavStack = createStackNavigator();
@@ -26,7 +24,7 @@ const Drawer = createDrawerNavigator();
 
 const StackNavigator = ({navigation}) => {
   return (
-    <HomeStack.Navigator mode="modal" headerMode="screen">
+    <HomeStack.Navigator headerMode="screen">
       <HomeStack.Screen
         name="Home"
         component={TabNavigator}
@@ -62,12 +60,12 @@ const StackNavigator = ({navigation}) => {
               style={{height: 30, width: 190}}
             />
           ),
-          headerTitleContainerStyle:{
-            alignSelf:'center',
-            justifyContent:'center',
-            alignItems:'center',
-            marginLeft:5
-          }
+          headerTitleContainerStyle: {
+            alignSelf: 'center',
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginLeft: 5,
+          },
         }}
       />
       <HomeStack.Screen
@@ -112,7 +110,6 @@ const postNavigator = () => (
     {/* <HomeStack.Screen name="category" component={Category} /> */}
   </PostStack.Navigator>
 );
-
 
 const favNavigator = () => (
   <FavStack.Navigator
@@ -161,10 +158,9 @@ const MoreNavigator = () => (
 
 const TabNavigator = () => (
   <Tab.Navigator
-  lazy
+    lazy
     lazyPreloadDistance={3}
-    tabBarOptions={{scrollEnabled: true, tabStyle: {width: 120}}}
-    >
+    tabBarOptions={{scrollEnabled: true, tabStyle: {width: 120}}}>
     <Tab.Screen name="Actualités" component={Home} />
     {Allcategories.map((category) => (
       <Tab.Screen
@@ -176,8 +172,6 @@ const TabNavigator = () => (
     ))}
   </Tab.Navigator>
 );
-
-
 
 export const DawerNavigator = () => (
   <Drawer.Navigator lazy lazyPreloadDistance={3}>
