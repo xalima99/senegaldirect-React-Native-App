@@ -8,20 +8,18 @@ import {
   ScrollView,
 } from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {useNavigation} from '@react-navigation/native'
+import {useNavigation} from '@react-navigation/native';
 import Title from '../components/common/Title';
 import colors from '../config/colors';
 import HTML from 'react-native-render-html';
 import Close from '../components/common/Close';
 import {loadSimilar} from '../services/ducks/actions';
 import Cover from '../components/cards/Cover';
-const {height} = Dimensions.get('window');
-import { StackActions } from '@react-navigation/native';
-
-
+const {height, width} = Dimensions.get('window');
+import {StackActions} from '@react-navigation/native';
 
 const Details = ({route}) => {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
   const {author, data, description, id, uri, title, category} = route.params;
   const similarPosts = useSelector((state) => state.categ.similar);
   const dispatch = useDispatch();
@@ -46,6 +44,7 @@ const Details = ({route}) => {
                 justifyContent: 'center',
               }}>
               <HTML
+                staticContentMaxWidth={width}
                 html={description}
                 imagesMaxWidth={Dimensions.get('window').width}
                 baseFontStyle={{fontSize: 20}}
@@ -69,7 +68,7 @@ const Details = ({route}) => {
                     uri={itemSim.uri}
                     style={styles.cover}
                     date={itemSim.datejs}
-                    onPress={() => navigation.push("Details", itemSim)}
+                    onPress={() => navigation.push('Details', itemSim)}
                   />
                 );
             })}
