@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "117781847761",
+    "project_id": "senegaldirect-51d78",
+    "storage_bucket": "senegaldirect-51d78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117781847761:android:ff59d258fa973743ebaff0",
+        "android_client_info": {
+          "package_name": "com.ultimate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117781847761-e50qia1981nhcp5cl2l272da0i88702e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU3ODVd1Xe7BUgI-NnUbnfLv3TNJsFI0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117781847761-e50qia1981nhcp5cl2l272da0i88702e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
